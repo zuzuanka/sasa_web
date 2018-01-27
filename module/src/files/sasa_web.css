@@ -1,0 +1,97 @@
+/* colors:
+#f1f1f1 - grey
+#f66200 - orange
+#106c1f - green
+#7f81ba - violet
+#95d0e8 - blue
+*/
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #106c1f;
+    border: 0;
+    font-size: 13px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+    }
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #f66200 !important;
+}
+
+/*Dropdown menu a zmena barev*/
+.dropdown-menu {
+    background-color: #106c1f;
+    opacity:0.9;
+}
+.dropdown-menu>.active>a {
+      background-color: #080808;
+}
+
+.container {
+    padding: 46px 0px 0px 0px;
+}
+
+a {
+    color: #95d0e2;
+}
+
+/* Obsah refernci, bublin */
+    .reference {
+        font-style: italic;
+        padding: 15px 15px;
+        border: 2px solid #666;
+        position: relative;
+        margin: 10px;
+        border-radius: 30px;
+        background-color: #f1f1f1;
+    }
+    /* Right triangle placed top right flush. */
+    .right-top:before {
+    	content: ' ';
+    	position: absolute;
+    	width: 0;
+    	height: 0;
+      left: auto;
+    	right: -35px;
+      top: -2px;
+    	bottom: auto;
+    	border: 32px solid;
+    	border-color: #666 transparent transparent transparent;
+    }
+    .right-top:after{
+    	content: ' ';
+    	position: absolute;
+    	width: 0;
+    	height: 0;
+      left: auto;
+    	right: -30px;
+      top: 0px;
+    	bottom: auto;
+    	border: 30px solid;
+    	border-color: #f1f1f1 transparent transparent transparent;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #106c1f;
+      color: white;
+      padding: 15px;
+    }
+
+footer a {
+    color: #f66200;
+}
+
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
